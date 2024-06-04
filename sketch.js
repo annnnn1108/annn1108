@@ -65,7 +65,7 @@ function drawSkeleton() {
       partA = pose.keypoints[3];
       partB = pose.keypoints[4];
       partC = pose.keypoints[7];
-      partD = pose.keypoints[8]; 
+      partD = pose.keypoints[8];
       //line(partA.x, partA.y, partB.x, partB.y);
     if (partA.score > 0.1) {
       image(carImg,partA.x,partA.y-25,50,50)
@@ -77,7 +77,7 @@ function drawSkeleton() {
      push()
       textSize(40)
       scale(-1,1)
-      text("41273045陳沛安",partA.x-width,partA.y-100)
+      text("412730425陳沛安",partA.x-width,partA.y-100)
      pop()
         if (partA.score > 0.1) {
       image(carImg, partC.x, partC.y, 50, 50);
@@ -86,7 +86,6 @@ function drawSkeleton() {
     // Draw the GIF at the right wrist if the score is higher than 0.1
     if (partB.score > 0.1) {
       image(carImg, partD.x, partD.y, 50, 50);
-    }
     }
         }
     }
