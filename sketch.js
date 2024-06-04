@@ -68,11 +68,11 @@ function drawSkeleton() {
       partD = pose.keypoints[8]; 
       //line(partA.x, partA.y, partB.x, partB.y);
     if (partA.score > 0.1) {
-      image(carImg,partA.x+(frameCount),partA.y-25,50,50)
+      image(carImg,partA.x,partA.y-25,50,50)
      // image(carImg,partA.x+100,partA.y-25,50,50)
       }
     if (partB.score > 0.1) {
-     image(carImg,partB.x+(frameCount),partB.y-25,50,50)
+     image(carImg,partB.x,partB.y-25,50,50)
     if (partB.score > 0.1) {
      push()
       textSize(40)
