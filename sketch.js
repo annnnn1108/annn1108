@@ -87,6 +87,7 @@ function drawSkeleton() {
     if (partB.score > 0.1) {
       image(carImg, partD.x, partD.y, 50, 50);
     }
+    }
         }
     }
     }
